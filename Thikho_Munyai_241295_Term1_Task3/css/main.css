@@ -794,7 +794,7 @@ h7{
     display: flex;
     flex-direction: row;
     padding-top: 40px;
-    padding-left: 10em;
+    padding-left: 6em;
     gap: 60px;
 }
 
@@ -815,14 +815,27 @@ h7{
     font-weight: 600;
     color: #300050;
     text-align: left;
-    padding: 0;
+    padding-left: 80px;
     margin: 0;
+    font-size: 20px;
 }
 
 .footerContent{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 300px;
+    
+    
+}
+
+.footerContent1 h3{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #300050;
+    font-size: 20px;
     
 }
 
@@ -831,6 +844,7 @@ h7{
     flex-direction: column;
     padding-top: 40px;
     line-height: 1.8;
+    padding-left: 80px;
 }
 
 .list a{
@@ -842,6 +856,7 @@ h7{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    padding-left: 5em;
 }
 
 .imgLinks img{
@@ -854,6 +869,7 @@ h7{
     flex-direction: row;
     margin-top: 30px;
     padding-bottom: 30px;
+    padding-left: 5em;
 }
 
 .copyright1 p{
@@ -861,13 +877,14 @@ h7{
     color: #6e6e6e;
     width: 60em;
     text-align: left;
-    padding-left: 11em;
+    padding-left: 1em;
 }
 
 .copyright2 p{
     font-weight: 500;
     color: #6e6e6e;
     text-align: right;
+    
 }
 
 .copyright3 p{
@@ -1015,14 +1032,6 @@ h7{
     margin-left: 30px;
 }
 
-.marsButtons{
-    padding-top: 30px;
-    padding-bottom: 50px;
-    border-bottom: 2px solid;
-    border-color: #919191;
-    width: 670px;
-
-}
 
 #skuMars{
     padding-top: 60px;
@@ -1674,7 +1683,7 @@ h7{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    margin: 4px 2px;
+    margin: 0px 2px;
     width: 270px;
     height: 70px;
     border: none;
@@ -1742,3 +1751,125 @@ h7{
     
 }
 
+.purpleButtonWrapper{
+    width: 190px;
+    height: 70px;
+    background: #45006D;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.twoButtons{
+    display: flex;
+    flex-direction: row;
+    width: 670px;
+    padding-top: 50px;
+}
+
+.value{
+    font-weight: bold;
+    font-weight: 22px;
+    color: white;
+}
+
+.minus{
+    color: white;
+    cursor: pointer;
+}
+
+.add{
+    color: white;
+    cursor: pointer;
+}
+
+.blueButtonWrapper{
+    width: 190px;
+    height: 70px;
+    background: #50BFD8;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.valueNeptune{
+    font-weight: bold;
+    font-weight: 22px;
+    color: white;
+}
+
+.minusNeptune{
+    color: white;
+    cursor: pointer;
+}
+
+.addJupiter{
+    color: white;
+    cursor: pointer;
+}
+
+.valueJupiter{
+    font-weight: bold;
+    font-weight: 22px;
+    color: white;
+}
+
+.minusJupiter{
+    color: white;
+    cursor: pointer;
+}
+
+.addJupiter{
+    color: white;
+    cursor: pointer;
+}
+
+.valueSaturn{
+    font-weight: bold;
+    font-weight: 22px;
+    color: white;
+}
+
+.minusSaturn{
+    color: white;
+    cursor: pointer;
+}
+
+.addSaturn{
+    color: white;
+    cursor: pointer;
+}
+
+.valueUranus{
+    font-weight: bold;
+    font-weight: 22px;
+    color: white;
+}
+
+.minusUranus{
+    color: white;
+    cursor: pointer;
+}
+
+.addUranus{
+    color: white;
+    cursor: pointer;
+}
+
+.valueMoon{
+    font-weight: bold;
+    font-weight: 22px;
+    color: white;
+}
+
+.minusMoon{
+    color: white;
+    cursor: pointer;
+}
+
+.addMoon{
+    color: white;
+    cursor: pointer;
+}
