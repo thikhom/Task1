@@ -38,15 +38,16 @@
                         <a href="../index.html">Home</a>
                         <a class="active" href="../pages/flights.html">Flights</a>
                         <a href="../pages/contact.html">Contact</a>
+                        <a href="../pages/about.html">About Us</a>
                     </div>
                     
                     <div class="search">
-                        <label for = "search">Search</label>
-                        <input type="search" id="search">
+                        <input type="search" placeholder="Search" id="search">
+                        <i class="fa-solid fa-magnifying-glass glass"></i>
                     </div>
 
 
-                    <div class="cart">
+                    <div class="cart" onclick="openModal()">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span class="quantity" value="0" id="ticket">0</span>
                     </div>
@@ -93,9 +94,9 @@
                     on the rust-colored landscapes of the Red Planet.</p>
                 <div class="twoButtons">
                     <div class="purpleButtonWrapper">
-                        <div class="minus">-</div>
-                        <div class="value" id="marsValue" class="value" value="0"></div>
-                        <div class="add">+</div>
+                        <div class="minus" onclick="minus('marsValue')">-</div>
+                        <input type="text" id="marsValue" class="value" value="0">
+                        <div class="add" onclick="add('marsValue')">+</div>
                     </div>
                         
                     <button class="bookNowButton" onclick="bookNow('marsValue')">Book Now</button></a>
@@ -124,12 +125,12 @@
                     adventure awaits, blending luxury with cosmic exploration.</p>
                 <div class="twoButtons">
                     <div class="blueButtonWrapper">
-                        <div class="minusNeptune">-</div>
-                        <div class="valueNeptune"></div>
-                        <div class="addNeptune">+</div>
+                        <div class="minus" onclick="minus('neptuneValue')">-</div>
+                        <input type="text" id="neptuneValue" class="value" value="0">
+                        <div class="add" onclick="add('neptuneValue')">+</div>
                     </div>
                         
-                    <a href="/Thikho_Munyai_241295_Term1_Task3/pages/flights.html"><button class="bookNowButton" type="button">Book Now</button></a>
+                    <button class="bookNowButton" onclick="bookNow('neptuneValue')">Book Now</button></a>
                 </div>
                 <p id="skuNeptune">SKU :SS405 <br>Shuttle : The Voyager <br>Tags: Neptune, Commercial, Gourmet Experience<br>Date: 4 April - 28 March</p>
             </div>
@@ -158,12 +159,12 @@
                     in luxury, blending exploration with adventure.</p>
                     <div class="twoButtons">
                         <div class="purpleButtonWrapper">
-                            <div class="minusJupiter">-</div>
-                            <div class="valueJupiter"></div>
-                            <div class="addJupiter">+</div>
+                            <div class="minus" onclick="minus('jupiterValue')">-</div>
+                            <input type="text" id="jupiterValue" class="value" value="0">
+                            <div class="add" onclick="add('jupiterValue')">+</div>
                         </div>
                             
-                        <a href="/Thikho_Munyai_241295_Term1_Task3/pages/flights.html"><button class="bookNowButton" type="button">Book Now</button></a>
+                        <button class="bookNowButton" onclick="bookNow('jupiterValue')">Book Now</button></a>
                     </div>
                 <p id="skuJupiter">SKU :SS606 <br>Shuttle : The Odyssey <br>Tags: Jupiter, Luxury, Adventure<br>Date: 15 June - 30 July</p>
             </div>
@@ -193,12 +194,12 @@
                     intertwines seamlessly with the excitement of adventure.</p>
                     <div class="twoButtons">
                         <div class="blueButtonWrapper">
-                            <div class="minusSaturn">-</div>
-                            <div class="valueSaturn"></div>
-                            <div class="addSaturn">+</div>
+                            <div class="minus" onclick="minus('saturnValue')">-</div>
+                            <input type="text" id="saturnValue" class="value" value="0">
+                            <div class="add" onclick="add('saturnValue')">+</div>
                         </div>
                             
-                        <a href="/Thikho_Munyai_241295_Term1_Task3/pages/flights.html"><button class="bookNowButton" type="button">Book Now</button></a>
+                        <button class="bookNowButton" onclick="bookNow('saturnValue')">Book Now</button></a>
                     </div>
                 <p id="skuSaturn">SKU :SS333 <br>Shuttle : The Explorer <br>Tags: Saturn, Luxury, Adventure<br>Date: 4 April - 28 Marchh</p>
             </div>
@@ -228,12 +229,12 @@
                     journey of a lifetime.</p>
                     <div class="twoButtons">
                         <div class="purpleButtonWrapper">
-                            <div class="minusUranus">-</div>
-                            <div class="valueUranus"></div>
-                            <div class="addUranus">+</div>
+                            <div class="minus" onclick="minus('uranusValue')">-</div>
+                            <input type="text" id="uranusValue" class="value" value="0">
+                            <div class="add" onclick="add('uranusValue')">+</div>
                         </div>
                             
-                        <a href="/Thikho_Munyai_241295_Term1_Task3/pages/flights.html"><button class="bookNowButton" type="button">Book Now</button></a>
+                        <button class="bookNowButton" onclick="bookNow('uranusValue')">Book Now</button></a>
                     </div>
                 <p id="skuUranus">SKU :SS735 <br>Shuttle : The Endeavour <br>Tags: Uranus, Workshop, Adventure<br>Date: 16 May - 19 July</p>
             </div>
@@ -262,24 +263,23 @@
                     of space.</p>
                     <div class="twoButtons">
                         <div class="blueButtonWrapper">
-                            <div class="minusMoon">-</div>
-                            <div class="valueMoon"></div>
-                            <div class="addMoon">+</div>
+                            <div class="minus" onclick="minus('moonValue')">-</div>
+                            <input type="text" id="moonValue" class="value" value="0">
+                            <div class="add" onclick="add('moonValue')">+</div>
                         </div>
                             
-                        <a href="/Thikho_Munyai_241295_Term1_Task3/pages/flights.html"><button class="bookNowButton" type="button">Book Now</button></a>
+                        <button class="bookNowButton" onclick="bookNow('moonValue')">Book Now</button></a>
                     </div>
                 <p id="skuMoon">SKU :SS451 <br>Shuttle : The Voyager <br>Tags: Moon, Commercial, Romantic<br>Date: 5 August - 12 August</p>
             </div>
         </div>
     </section>
 
-    <div class="sidebar" id="sidebar">
-        <div class="sideBarClose">
-            <i class="fa-solid fa-close"></i>
-        </div>
+    <div class="sidebar" id="sidebar" style="display: none;">
+        <span class="sideBarClose" onclick="closeSidebar()">&times;</span>
+            
             <div class="cartMenu">
-                <h3>My Cart</h3>
+                <h3>My Cart </h3>
                 <div class="cartItems">Test 1</div>
             </div>
         

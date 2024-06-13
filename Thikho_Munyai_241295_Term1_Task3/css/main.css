@@ -157,15 +157,7 @@
     float: left;
     margin-right: 70px;
     width: 100%;
-    display: none ;
 }
-img.displaySlide{
-    display: block;
-}
-
-
-
-
 
 .featuredTripText{
     padding-top:100px;
@@ -497,7 +489,7 @@ p{
 
 
 .navFlex a{
-    padding-left: 120px;
+    padding-left: 10px;
 }
 
 .navFlex{
@@ -1720,6 +1712,10 @@ h7{
     font-weight: 500;
 }
 
+.hide{
+    display: none;
+}
+
 .aboutImg img{
     float: right;
     padding-right: 150px;
@@ -1782,7 +1778,12 @@ h7{
 
 .value {
     font-weight: bold;
-    font-weight: 22px;
+    border: none;
+    margin: 0px;
+    font-size: 18px;
+    cursor: pointer;
+    background: transparent;
+    width: 20px;
     color: white;
 }
 
@@ -1933,8 +1934,8 @@ h7{
     height: 100%;
     position: fixed;
     top: 0;
-    /* right: 0; */
-    right: -300px;
+    right: 0;
+    /* right: -300px; */
     background-color: #ffffff;
     box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease-in-out;
@@ -1947,12 +1948,24 @@ h7{
 .sideBarOpen{
     right: 0;
 }
+
 .sideBarClose{
+    color: #aaaaaa;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-top: 10px;
     position: absolute;
     right: 20px;
     top: 10px;
-    cursor: pointer;
 }
+  
+  .sideBarClose:hover, .sideBarClose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 .cartItems{
     display: flex;
