@@ -2116,3 +2116,19 @@ h7{
     font-size: 24px;
     color: #45006D;
 }
+
+.container-lg{
+    padding-top: 50px;
+}
+
+.display-4{
+    font-weight: 600;
+    font-size: 30px;
+    color: #45006D;
+}
+
+.display-5{
+    font-weight: 500;
+    font-size: 25px;
+    color: #50BFD8;
+}
