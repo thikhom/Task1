@@ -142,20 +142,30 @@
     padding-top: 20px;
     
 }
+.featuredTrip{
+    display: flex;
+    margin-left: 150px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+    overflow: hidden;
+}
 
 .featuredTrip img{
     max-width: 609px;
     max-height: 649px;
     float: left;
     margin-right: 70px;
+    width: 100%;
+    display: none ;
+}
+img.displaySlide{
+    display: block;
 }
 
-.featuredTrip{
-    display: flex;
-    margin-left: 150px;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
+
+
+
 
 .featuredTripText{
     padding-top:100px;
@@ -484,13 +494,15 @@ p{
 }
 
 
+
+
 .navFlex a{
-    padding: 15px;
+    padding-left: 120px;
 }
 
 .navFlex{
     display: flex;
-    padding-left: 20px;
+    padding-left: 19px;
     font-size: 16px;
     font-family: "Poppins",sans-serif;
     font-weight: 600;
@@ -914,7 +926,7 @@ h7{
     display: flex;
     align-items: center;
     padding: 0;
-    padding-right: 20px;
+    width: 300px;
 }
 
 .search input{
@@ -1768,7 +1780,7 @@ h7{
     padding-top: 50px;
 }
 
-.value{
+.value {
     font-weight: bold;
     font-weight: 22px;
     color: white;
@@ -1872,4 +1884,222 @@ h7{
 .addMoon{
     color: white;
     cursor: pointer;
+}
+
+.cart{
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #45006D;
+    border-radius: 50%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-right: 50px;
+
+
+}
+
+.cart span{
+    color: white;
+    margin-left: 2px;
+    font-size: 25px;
+}
+
+.cart i{
+    color: white;
+    margin-left: 30px;
+}
+
+
+.input{
+    border: none;
+    margin: 0px;
+    font-size: 18px;
+    cursor: pointer;
+    background: transparent;
+    width: 20px;
+
+}
+
+.sidebar {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    right: -300px;
+    background-color: #ffffff;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sideBarOpen{
+    right: 0;
+}
+.sideBarClose{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.cartItems{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.cartItems{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-radius: 5px;
+    color: gray;
+    border: 1px solid gray;
+}
+
+.cartItemPrice{
+    color: #99a98f;
+}
+
+.sideBarFooter{
+    position: absolute;
+    bottom: 10px;
+    width: 88%;
+}
+
+.totalAmount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+
+.cartTotal{
+    font-size: 16px;
+    color: #99a98f;
+    font-weight: 500;
+}
+
+.checkoutButton{
+    width: 100%;
+    margin-top: 2rem;
+    background: #50BFD8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.material-symbols-outlined{
+    color: white;
+    font-size: 25px;
+}
+
+.filterText{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0;
+    gap: 20px;
+}
+
+.filterSection{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    padding-top: 25px;
+    gap: 30px;
+}
+
+.viewCozy{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.viewDay {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid grey;
+    width: 90px;
+}
+
+.viewDay span{
+    color: #50BFD8;
+}
+
+.showing{
+    display: flex;
+    align-items: center;
+}
+
+.showing p{
+    align-items: center;
+    font-weight: 500;
+}
+
+.show{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.show p{
+    width: 90px;
+    font-weight: 500;
+    margin-left: 200px;
+    
+}
+
+
+.six{
+    width: 10px;
+}
+
+.six p{
+    font-weight: 500;
+    width: 50px;
+    margin-left: 20px;
+    background: #d1d1d1b4;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #45006D;
+    
+}
+
+.sort{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sort p{
+    width: 90px;
+    font-weight: 500;
+    margin-left: 130px;
+}
+
+.default p{
+    font-weight: 500;
+    width: 100px;
+    margin-left: 20px;
+    background: #d1d1d1b4;
+    border-radius: 5px;
+    font-size: 24px;
+    color: #45006D;
 }

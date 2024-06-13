@@ -15,11 +15,13 @@
          link javascript
          link Google Font files
          link CSS-->
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/main.css"
+        <link rel="stylesheet" href="../css/main.css">
 
 
 </head>
@@ -39,18 +41,36 @@
                     </div>
                     
                     <div class="search">
-                        <form>
-                            <input type="text" placeholder="Search">
-                        </form>
+                        <label for = "search">Search</label>
+                        <input type="search" id="search">
                     </div>
 
+
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="quantity" value="0" id="ticket">0</span>
+                    </div>
+                </div>
                 </div>
             </nav>
         </div>
     </header>
 
     <section class="icons">
+        <div class="filterSection">
+            <div class="filterText"><span class="material-symbols-outlined">tune</span>Filter</div>
+            <div class="viewCozy"><span class="material-symbols-outlined">view_cozy</span></div>
+            <div class="viewDay"><span class="material-symbols-outlined">view_day</span></div>
+            <div class="showing"><p>Showing 1-16 of 32 results</p></div>
 
+            <div class="show"><p>Show</p>
+                <div class="six"><p>6</p></div>
+            </div>
+            <div class="sort"><p>Sort By</p>
+                <div class="default"><p>Default</p></div>
+            </div>
+
+        </div>
     </section>
 
     <section class="marsExperienceContainer">
@@ -74,11 +94,11 @@
                 <div class="twoButtons">
                     <div class="purpleButtonWrapper">
                         <div class="minus">-</div>
-                        <div class="value"></div>
+                        <div class="value" id="marsValue" class="value" value="0"></div>
                         <div class="add">+</div>
                     </div>
                         
-                    <a href="/Thikho_Munyai_241295_Term1_Task3/pages/flights.html"><button class="bookNowButton" type="button">Book Now</button></a>
+                    <button class="bookNowButton" onclick="bookNow('marsValue')">Book Now</button></a>
                 </div>
                 <p id="skuMars">SKU :SS001 <br>Shuttle : The Opulence <br>Tags: Mars, Luxury, Sale <br>Date: 16 June - 19 July</p>
         </div>
@@ -253,6 +273,26 @@
             </div>
         </div>
     </section>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sideBarClose">
+            <i class="fa-solid fa-close"></i>
+        </div>
+            <div class="cartMenu">
+                <h3>My Cart</h3>
+                <div class="cartItems">Test 1</div>
+            </div>
+        
+
+        <div class="sideBarFooter">
+            <div class="totalAmount">
+                <h5>Total</h5>
+                <div class="cartTotal">R0.00</div>
+            </div>
+            <button class="checkoutButton">Checkout</button>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footerContainer">

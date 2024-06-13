@@ -12,8 +12,10 @@ add.onclick = function(){
 }
 
 minus.onclick = function(){
+    if (totalValue>0){
     totalValue--;
     value.innerHTML = totalValue;
+    } 
 }
 
 const minusNeptune = document.querySelector(".minusNeptune");
@@ -94,4 +96,34 @@ addMoon.onclick = function(){
 minusMoon.onclick = function(){
     totalValue--;
     valueMoon.innerHTML = totalValue;
+}
+
+function bookNow(buttoned){
+    let mars = parseInt(document.getElementById(buttoned).value);
+    let tickets = parseInt(document.getElementById('ticket').innerHTML) + mars;
+    document.getElementById('ticket').innerHTML=tickets;
+ 
+}
+
+//image slides
+
+const featuredTrip = document.querySelectorAll(".featuredTrip img");
+let imgIndex = 0;
+let intervalId = null;
+
+initializeSlider()
+   
+function initializeSlider(){
+
+    featuredTrip[imgIndex].classList.add("displaySlide");
+
+}
+function showSlide(index){
+
+}
+function prevSlide(){
+
+}
+function nextSlide(){
+
 }

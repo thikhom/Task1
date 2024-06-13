@@ -34,17 +34,16 @@
             
                         <div class="navFlex"><img src="assets/images/logo.png" width="180px"></div>
                         <div class="navFlex">
-                            <a class="active" href="index.html">Home</a>
-                            <a href="pages/flights.html">Flights</a>
+                            <a class="active"href="../index.html">Home</a>
+                            <a  href="pages/flights.html">Flights</a>
                             <a href="pages/contact.html">Contact</a>
                         </div>
-
+                        
                         <div class="search">
-                            <form>
-                                <input type="text" placeholder="Search">
-                            </form>
+                            <label for = "search">Search</label>
+                            <input type="search" id="search">
                         </div>
-
+    
                     </div>
                 </nav>
             </div>            
@@ -54,14 +53,17 @@
     
     <section class="featuredTripSection">
         <div class="featuredTrip">
-            <div class="img1"><img src="assets/Images/marsSliderClipped1.png">
-                <div class="arrowLeft">
+            <img class="img1"><img src="assets/Images/marsSliderClipped1.png">
+            <img class="img1"><img src="assets/Images/marsSliderClipped2.png">
+            <div class="img1"><img src="assets/Images/marsSliderClipped3.png">
+            <div class="img1"><img src="assets/Images/marsSliderClipped14.png">
+            <div class="arrowLeft" onclick="previousSlide()">
                     <img src="assets/Images/arrowLeftWhite.png">
-                </div>
-                <div class="arrowRight">
-                    <img src="assets/Images/arrowRightWhite.png">
-                </div>
             </div>
+            <div class="arrowRight" onclick="nextSlide()">
+                <img src="assets/Images/arrowRightWhite.png">
+            </div>
+                    </div>
             <div class="featuredTripText">
                 <h2>FEATURED TRIP</h2>
                 <h1>THE CLASSIC MARS EXPERIENCE</h1>
